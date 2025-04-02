@@ -1,6 +1,5 @@
 .DEFAULT:
 build:
-	# @zig build
 	@zig build -Doptimize=ReleaseSafe -Dtarget=x86_64-windows-gnu
 	@zig build -Doptimize=ReleaseSafe -Dtarget=aarch64-windows-gnu
 	@zig build -Doptimize=ReleaseSafe -Dtarget=aarch64-macos-none

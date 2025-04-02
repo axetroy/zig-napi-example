@@ -36,8 +36,8 @@
     // Once all dependencies are fetched, `zig build` no longer requires
     // internet connectivity.
     .dependencies = .{ .napigen = .{
-        .url = "git+https://github.com/cztomsik/napigen?ref=main#82f7d45f26b3dfc80d8bc298f940b345b80d2d37",
-        .hash = "napigen-0.1.0-YpiIukV6AAAg_9wcO7BSFgndTRGKFrvZG7BGCUuAuuGh",
+        .url = "git+https://github.com/cztomsik/napigen?ref=main#007b4bc8751cf78879288048013fbb62e050a072",
+        .hash = "napigen-0.1.0-YpiIus97AADwFfVGGwPnrN3khPQKeKz1BPExTpR3TkCy",
     } },
     .paths = .{
         "build.zig",
