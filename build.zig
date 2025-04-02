@@ -23,12 +23,6 @@ pub fn build(b: *std.Build) void {
     const napigen = b.dependency("napigen", .{});
     lib.root_module.addImport("napigen", napigen.module("napigen"));
 
-    const sqlite = b.dependency("sqlite", .{
-        .target = target,
-        .optimize = optimize,
-    });
-    lib.root_module.addImport("sqlite", sqlite.module("sqlite"));
-
     // Build the lib
     b.installArtifact(lib);
 
