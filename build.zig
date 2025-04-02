@@ -17,7 +17,7 @@ pub fn build(b: *std.Build) void {
     // lib.linkLibCpp();
 
     // Use weak-linkage
-    lib.linker_allow_shlib_undefined = true;
+    lib.linker_allow_shlib_undefined = false;
 
     // Add napigen
     const napigen = b.dependency("napigen", .{});
